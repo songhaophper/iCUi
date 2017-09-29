@@ -1,5 +1,5 @@
 {
-  "name": "ui-doc",
+  "name": "icui",
   "version": "0.0.1",
   "description": "ui framework document template",
   "main": "./dist/index.js",
@@ -13,7 +13,7 @@
   "keywords": [
     "doc",
     "vue",
-    "youzan"
+    "icui"
   ],
   "author": "songhao",
   "license": "MIT",

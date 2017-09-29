@@ -1,7 +1,7 @@
 <template>
   <section class="demo-loading">
     <h1 class="text">iOS Loading</h1>
-    <ic-loading></ic-loading>
+    <ic-loading :size="20"></ic-loading>
   </section>
 </template>
 <style>
