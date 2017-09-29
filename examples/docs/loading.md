@@ -22,6 +22,13 @@ Vue.component(Loading.name, Loading);
 
 :::demo
 ```html
-<ic-loading></ic-loading>
+<ic-loading :size = "20"></ic-loading>
 ```
 :::
+
+### Options
+
+| 参数       | 说明      | 类型       | 默认值       |
+|-----------|-----------|-----------|-------------|
+| size | loading的大小 | `Number` | 20|
+
