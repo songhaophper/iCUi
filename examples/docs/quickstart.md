@@ -39,8 +39,8 @@ npm i icui -S
  
 ```javascript
 import Vue from 'vue';
-import iCUi from 'icui';
+import icui from 'icui';
 import 'icui/lib/icui-css/index.css';
 
-Vue.use(iCUi);
+Vue.use(icui);
 ```

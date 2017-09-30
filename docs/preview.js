@@ -22,7 +22,7 @@ import Icon from './component/Icon.vue'
 
 import 'packages/icui-css/src/index.css' 
 
-import iCUi from 'packages'
+import icui from 'packages'
 
 const components = [Nav, NavLink, Header, Footer, ZanDoc, Block, Content, Container, FooterNav, Simulator, DemoBlock, DocBlock, DemoList, MobileNav, Icon]
 const installComponents = function (Vue) { 
@@ -54,7 +54,7 @@ const router = new VueRouter({
   routes: routesConfig
 });
 
-Vue.use(iCUi)
+Vue.use(icui)
 Vue.use(VueRouter)
 
 router.beforeEach((to, from, next) => {
