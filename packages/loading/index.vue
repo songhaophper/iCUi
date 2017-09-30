@@ -1,18 +1,18 @@
 <template>
-  <div class="Infinite-loading-3ZpH">
-          <div class="Spinner-root-1qUQ" :style="stylesheet">
-            <span class="Spinner-blade-2zCD"></span>
-            <span class="Spinner-blade-2zCD"></span>
-            <span class="Spinner-blade-2zCD"></span>
-            <span class="Spinner-blade-2zCD"></span>
-            <span class="Spinner-blade-2zCD"></span>
-            <span class="Spinner-blade-2zCD"></span>
-            <span class="Spinner-blade-2zCD"></span>
-            <span class="Spinner-blade-2zCD"></span>
-            <span class="Spinner-blade-2zCD"></span>
-            <span class="Spinner-blade-2zCD"></span>
-            <span class="Spinner-blade-2zCD"></span>
-            <span class="Spinner-blade-2zCD"></span>
+  <div class="Infinite-loading">
+          <div class="Spinner-root" :style="stylesheet">
+            <span class="Spinner-blade"></span>
+            <span class="Spinner-blade"></span>
+            <span class="Spinner-blade"></span>
+            <span class="Spinner-blade"></span>
+            <span class="Spinner-blade"></span>
+            <span class="Spinner-blade"></span>
+            <span class="Spinner-blade"></span>
+            <span class="Spinner-blade"></span>
+            <span class="Spinner-blade"></span>
+            <span class="Spinner-blade"></span>
+            <span class="Spinner-blade"></span>
+            <span class="Spinner-blade"></span>
           </div>
   </div>
 </template>
