@@ -16,7 +16,7 @@ import Simulator from './component/Simulator.vue'
 import DocBlock from './component/DocBlock.vue'
 import DemoBlock from './component/DemoBlock.vue'
 import iCUi from 'packages'
-import './icui-css/src/index.css'
+import 'packages/icui-css/src/index.css'
 
 const components = [Nav, NavLink, Header, Footer, ZanDoc, Block, Content, Container, FooterNav, Simulator, DemoBlock, DocBlock]
 const installComponents = function (Vue) { 

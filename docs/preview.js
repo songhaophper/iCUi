@@ -20,7 +20,7 @@ import DemoList from './component/DemoList.vue'
 import MobileNav from './component/MobileNav.vue'
 import Icon from './component/Icon.vue'
 
-import './icui-css/src/index.css' 
+import 'packages/icui-css/src/index.css' 
 
 import iCUi from 'packages'
 
