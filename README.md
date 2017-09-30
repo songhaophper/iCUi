@@ -44,3 +44,6 @@ import 'icui/lib/icui-css/index.css';
 
 Vue.use(icui);
 ```
+## Preview
+
+![image](https://qr.api.cli.im/qr?data=http%253A%252F%252F118.190.69.137%253A5678&level=H&transparent=false&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=1&logourl=&size=280&kid=cliim&key=d8d83cde61dc22a9c5ebd4c4b72fa481)

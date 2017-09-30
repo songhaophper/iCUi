@@ -13,6 +13,7 @@ const styleLoaders = [
 
 module.exports = { 
   entry:   {
+    vendor: ['packages'],
     'docs': './docs/index.js',     // 文档页面
     'preview': './docs/preview.js' // 手机端模拟器预览效果
   },
@@ -20,10 +21,11 @@ module.exports = {
     path: path.join(__dirname, '../dist'),
     publicPath: '/',
     filename: '[name].js',
-    // umdNamedDefine: true,
-    // chunkFilename: 'async.[name].js'
+    umdNamedDefine: true,
+    chunkFilename: 'async.[name].js'
   },
   devServer: {
+    host: '0.0.0.0',
     historyApiFallback: {
       rewrites: [
         { from: /^\/preview/, to: '/preview.html' }, // 访问 http://localhost:8081/preview 时指向 preview.html 
@@ -124,19 +126,20 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       chunks: ['vendor', 'docs'],
-      template: './docs/index.tpl',
+      template: 'docs/index.tpl',
       filename: 'index.html',
       inject: true
     }),
     new HtmlWebpackPlugin({ 
       chunks: ['vendor', 'preview'],
-      template: './docs/index.tpl',
+      template: 'docs/index.tpl',
       filename: 'preview.html',
       inject: true
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      minChunks: 2
+      minChunks: 2,
+      filename: isProduction ? 'vendor.[hash:8].js' : 'vendor.js'
     }),
     new webpack.HotModuleReplacementPlugin(),
     new OptimizeCssAssetsPlugin(),

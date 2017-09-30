@@ -51,7 +51,7 @@ routesConfig.push({
 });
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: '/doc',
   routes: routesConfig
 });
@@ -59,10 +59,9 @@ Vue.use(icui)
 Vue.use(VueRouter) 
 
 router.beforeEach((route, redirect, next) => {
-  if (route.path !== '/') { 
-    window.scrollTo(0, 0);
-  }
-
+  // if (route.path !== '/') { 
+  //   window.scrollTo(0, 0);
+  // }
   const pathname = '/preview';
   if (isMobile()) {
     window.location.replace(pathname);
@@ -71,8 +70,16 @@ router.beforeEach((route, redirect, next) => {
   document.title = route.meta.title || document.title;
   next();
 });
+router.afterEach(() => {
+  window.scrollTo(0, 0);
+  window.syncPath();
+});
 
+window.vueRouter = router;
 
+if (process.env.NODE_ENV !== 'production') {
+  Vue.config.productionTip = false;
+}
 new Vue({
   el: '#app',
   // store,
