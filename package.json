@@ -1,8 +1,8 @@
 {
   "name": "icui",
   "version": "0.0.1",
-  "description": "ui framework document template",
-  "main": "./dist/index.js",
+  "description": "icui 移动端组件库",
+  "main": "lib/icui.js",
   "scripts": {
     "dev": "node_modules/.bin/webpack-dev-server --config ./build/webpack.config.dev.js",
     "build:components": "node build/bin/build-components.js --color",
