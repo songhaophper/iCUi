@@ -1,9 +1,16 @@
-const navs = require('./doc.config')['zh-CN'].nav;
+
 import componentDocs from '../examples/entry-docs';
 import componentDemos from '../examples/entry-demos';
+import './iframe-router';
+
+const navs = require('./doc.config')['zh-CN'].nav;
 
 const registerRoute = (isExample) => {
-  let route = [];
+  const route = [{
+    path: '*',
+    redirect: '/'
+  }];
+
   navs.forEach(nav => {
     if (isExample && !nav.showInMobile) {
       return;

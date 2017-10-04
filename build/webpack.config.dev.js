@@ -81,6 +81,10 @@ module.exports = {
         use: ExtractTextPlugin.extract({ use: styleLoaders })
       },
       {
+        test: /\.styl$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'stylus-loader']
+      },
+      {
         test: /\.md/,
         loader: 'vue-markdown-loader'
       },

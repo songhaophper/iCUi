@@ -41,30 +41,37 @@ export {
 
 Vue.use(installComponents)  
 
+Vue.use(icui)
+
+Vue.use(VueRouter)
 
 const routesConfig = routes(true);
 routesConfig.push({
   path: '/',
-  component: DemoList.default || DemoList
+  component: DemoList
 });
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: '/preview',
   routes: routesConfig
 });
 
-Vue.use(icui)
-Vue.use(VueRouter)
 
-router.beforeEach((to, from, next) => {
+
+router.afterEach(() => {
   const container = document.querySelector('.examples-container');
   if (container) {
     document.querySelector('.examples-container').scrollTop = 0;
   }
-  next()
+  window.syncPath();
 });
 
+window.vueRouter = router;
+
+if (process.env.NODE_ENV !== 'production') {
+  Vue.config.productionTip = false;
+}
 
 new Vue({
   el: '#app',

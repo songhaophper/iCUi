@@ -1,9 +1,10 @@
 import Loading from './loading';
+import Toast from './toast';
 const version = '0.0.1';
 const components = [
-  Loading
+  Loading,
+  Toast
 ];
-
 const install = function(Vue) {
   if (install.installed) return;
 
@@ -20,7 +21,8 @@ if (typeof window !== 'undefined' && window.Vue) {
 export {
   install,
   version,
-  Loading
+  Loading,
+  Toast
 };
 export default {
   install,

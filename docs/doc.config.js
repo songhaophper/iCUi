@@ -37,7 +37,15 @@ module.exports = {
               }
             ]
           },
-
+          {
+            "groupName": "操作反馈",
+            "list": [
+              {
+                "path": "/toast",
+                "title": "Toast 轻提示"
+              }
+            ]
+          },
         ]
       }
     ]

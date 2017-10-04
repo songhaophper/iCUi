@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <zan-doc :simulator="simulatorSrc" :config="config">
+    <zan-doc :simulator="simulator" :config="config">
       <router-view></router-view>
     </zan-doc>
   </div>
@@ -13,13 +13,14 @@ import docConfig from './doc.config';
 export default {
   data() {
     return {
-      config: docConfig['zh-CN']
+      config: docConfig['zh-CN'],
+      simulator: this.getSimulatorPath()
     };
   },
-  computed: {
-    simulatorSrc() {
+  methods: {
+    getSimulatorPath() {
       const dir = this.$route.path.split('/').pop();
-      if (dir === 'quickstart' || dir === 'changelog') {
+      if (dir === 'quickstart') {
         return '/preview';
       } else {
         return `/preview/component/${dir}`;
@@ -28,3 +29,11 @@ export default {
   }
 };
 </script>
+
+<style lang="postcss">
+.zan-doc-content--quickstart {
+  h3:not(:first-of-type) {
+    margin-top: 35px;
+  }
+}
+</style>
