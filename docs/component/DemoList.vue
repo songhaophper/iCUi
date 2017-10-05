@@ -1,6 +1,5 @@
 <template>
   <div class="side-nav">
-    <h1 class="zanui-title">iCUi Wap</h1>
     <h2 class="zanui-desc">Vue 移动端组件</h2>
     <div class="mobile-navs">
       <template v-for="(item, index) in data">
@@ -49,12 +48,7 @@ export default {
     }
 
     .zanui-title {
-      padding-top: 60px;
-      height: 0;
-      overflow: hidden;
-      background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506656813140&di=16d80d655f27b147de13009154ce32a6&imgtype=0&src=http%3A%2F%2F91.gdown.baidu.com%2Fimg%2F0%2F512_512%2F340319f030fed78b65be049027f43724.png) center center no-repeat;
-      background-size: 60px 60px;
-      margin-bottom: 10px;
+      
     }
 
     .zanui-desc {

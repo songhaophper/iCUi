@@ -61,9 +61,9 @@ export default {
 
   &__logo {
     display: block;
-    width: 40px;
-    height: 40px;
-    background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506656813140&di=16d80d655f27b147de13009154ce32a6&imgtype=0&src=http%3A%2F%2F91.gdown.baidu.com%2Fimg%2F0%2F512_512%2F340319f030fed78b65be049027f43724.png);
+    width: 60px;
+    height: 60px;
+    background-image: url(http://oetr5vzir.bkt.clouddn.com/WX20171005-094729@2x.png);
     background-size: contain;
     background-repeat: no-repeat;
   }

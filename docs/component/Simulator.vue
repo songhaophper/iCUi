@@ -55,7 +55,7 @@ export default {
       return this.scrollTop > 60;
     },
     simulatorStyle() {
-      const height = Math.min(556, this.windowHeight - 222);
+      const height = Math.min(556, this.windowHeight - 180);
       return {
         height: height + 'px'
       };
