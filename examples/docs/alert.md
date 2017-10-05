@@ -7,7 +7,7 @@
 </style>
 
 
-## Toast 轻提示
+## iOS Alert
 
 ### 使用指南
 
