@@ -43,6 +43,10 @@ module.exports = {
               {
                 "path": "/toast",
                 "title": "Toast 轻提示"
+              },
+              {
+                "path": "/alert",
+                "title": "iOS Alert"
               }
             ]
           },

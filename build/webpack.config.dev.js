@@ -36,7 +36,7 @@ module.exports = {
   },
   resolve: {
     modules: [path.join(__dirname, '../node_modules'), 'node_modules'],
-    extensions: ['.js', '.vue', '.css'],
+    extensions: ['.js', '.vue', '.css','.styl'],
     alias: {
       vue: 'vue/dist/vue.runtime.esm.js',
       src: path.join(__dirname, '../docs'),
@@ -83,7 +83,7 @@ module.exports = {
       {
         test: /\.styl$/,
         use: ExtractTextPlugin.extract({
-          use: 'css-loader?minimize!postcss-loader!stylus-loader'
+          use: 'stylus-loader'
         })
       },
       {

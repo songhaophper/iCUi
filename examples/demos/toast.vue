@@ -10,14 +10,15 @@
         width:100px;
         background: #47c9bc;
         text-align:center;
-        height:30px;
+        height:40px;
         font-size:12px;
-        margin-top:30px;
         color:#fff;
         position:absolute;
         left:50%;
+        top:50%;
+        margin-top:-40px;
         margin-left:-50px;
-        border-radius:3px;
+        border-radius:6px;
   }
 }
 </style>
