@@ -1,57 +1,38 @@
-import Vue from 'vue';
-import VueToast from './toast';
+import Vue from 'vue'
+import ToastComponent from './toast'
 
 let instance;
 
-const defaultOptions = {
-  visible: true,
-  type: 'text',
-  duration: 3000,
-  forbidClick: false,
-  clear: () => {
-    instance.visible = false;
-  }
-};
+// toast 是否存在的标记位
+let showing = false;
 
-const createInstance = () => {
-  if (!instance) {
-    const ToastConstructor = Vue.extend(VueToast);
+// init constructor
+let ToastConstructor = Vue.extend(ToastComponent);
+
+// init toast instance
+let initInstance = ()=>{
     instance = new ToastConstructor({
-      el: document.createElement('div')
+        el: document.createElement('div')
     });
     document.body.appendChild(instance.$el);
-  }
-};
+}
 
-const Toast = (options = {}) => {
-  createInstance();
+// 显示
+let Toast = (content, duration=1500)=>{
+    // 如果没有显示, 则不显示
+    if (!showing) {
 
-  options = typeof options === 'string' ? { message: options } : options;
-  options = { ...defaultOptions, ...options };
-  Object.assign(instance, options);
+        showing = true;
+        initInstance();
+        instance.show = true;
+        instance.content = content;
+        instance.duration = duration;
 
-  clearTimeout(instance.timer);
-
-  if (options.duration !== 0) {
-    instance.timer = setTimeout(() => {
-      instance.clear();
-    }, options.duration);
-  }
-
-  return instance;
-};
-
-const createMethod = type => (options = {}) => Toast({
-  type,
-  message: typeof options === 'string' ? options : options.message,
-  ...options
-});
-
-Toast.loading = createMethod('loading');
-Toast.success = createMethod('success');
-Toast.fail = createMethod('fail');
-Toast.clear = () => {
-  instance && instance.clear();
-};
-
-export default Toast;
+        // 在指定 duration 之后干掉 toast
+        setTimeout(()=>{
+            showing = false;
+            instance.show = false;  
+        }, instance.duration);
+    }
+}
+export default Toast

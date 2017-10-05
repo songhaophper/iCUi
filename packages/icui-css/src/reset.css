@@ -69,3 +69,22 @@ textarea {
   -webkit-appearance: none;
       -moz-appearance: none;
 }
+
+button, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input,button,select,textarea{
+  outline:none;
+  border: none;
+}
+
+button {
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+}

@@ -48,4 +48,5 @@
 
 .ic-toast-fade-enter, .ic-toast-fade-leave-to {
   opacity: 0;
+  transition: all .4s;
 }

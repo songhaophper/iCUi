@@ -23,7 +23,7 @@ export default {
 ### 使用指南
 
 ```javascript
-import { Toast } from 'vant';
+import { Toast } from 'icui';
 ```
 
 ### 代码演示
@@ -39,11 +39,19 @@ import { Toast } from 'vant';
 export default {
   methods: {
     showToast() {
-      Toast('我是提示文案，建议不超过十五字~');
+      Toast('toast提示',2000);
     }
   }
 }
 ```
+### Options
+
+| 参数       | 说明      | 类型       | 默认值       | 
+|-----------|-----------|-----------|-------------|
+
+| content | 内容 | `String` | `''` | - |
+| duration | 时长(ms) | `Number` | `1500` |
+
 
 
 
