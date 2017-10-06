@@ -15,7 +15,10 @@ export default {
         Alert('欢迎使用icui', {
           title: '提示',
           btn: {
-            text: '确定'
+            text: '确定',
+            style :{
+              'color': '#47c9bc'
+            },
           }
         })
         .then(()=>{

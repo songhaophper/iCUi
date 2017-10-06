@@ -47,6 +47,10 @@ module.exports = {
               {
                 "path": "/alert",
                 "title": "iOS Alert"
+              },
+              {
+                "path": "/confirm",
+                "title": "iOS Confirm"
               }
             ]
           },

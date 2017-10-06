@@ -3,4 +3,5 @@ export default {
   'loading': r => require.ensure([], () => r(require('./docs/loading.md')), 'loading.md'),
   'toast': r => require.ensure([], () => r(require('./docs/toast.md')), 'toast.md'),
   'alert': r => require.ensure([], () => r(require('./docs/alert.md')), 'alert.md'),
+  'confirm': r => require.ensure([], () => r(require('./docs/confirm.md')), 'confirm.md')
 };

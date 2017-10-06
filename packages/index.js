@@ -1,11 +1,13 @@
 import Loading from './loading';
 import Toast from './toast';
 import Alert from './alert';
+import Confirm from './confirm';
 const version = '0.0.1';
 const components = [
   Loading,
   Toast,
-  Alert
+  Alert,
+  Confirm
 ];
 const install = function(Vue) {
   if (install.installed) return;
@@ -25,7 +27,8 @@ export {
   version,
   Loading,
   Toast,
-  Alert
+  Alert,
+  Confirm
 };
 export default {
   install,
