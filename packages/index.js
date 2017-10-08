@@ -1,10 +1,12 @@
 import Loading from './loading';
+import SwitchOption from './switch-option';
 import Toast from './toast';
 import Alert from './alert';
 import Confirm from './confirm';
 const version = '0.0.1';
 const components = [
   Loading,
+  SwitchOption,
   Toast,
   Alert,
   Confirm
@@ -24,6 +26,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export {
   install,
+  SwitchOption,
   version,
   Loading,
   Toast,

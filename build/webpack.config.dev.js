@@ -82,9 +82,7 @@ module.exports = {
       },
       {
         test: /\.styl$/,
-        use: ExtractTextPlugin.extract({
-          use: 'stylus-loader'
-        })
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'stylus-loader']
       },
       {
         test: /\.md/,

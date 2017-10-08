@@ -43,7 +43,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 * {
-  box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 body {
