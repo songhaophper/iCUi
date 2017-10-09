@@ -34,6 +34,10 @@ module.exports = {
               {
                 "path": "/loading",
                 "title": "Loading 加载"
+              },
+              {
+                "path": "/slider",
+                "title": "Slider 轮播"
               }
             ]
           },

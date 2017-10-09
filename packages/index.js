@@ -3,13 +3,15 @@ import SwitchOption from './switch-option';
 import Toast from './toast';
 import Alert from './alert';
 import Confirm from './confirm';
+import Slider from './slider';
 const version = '0.0.1';
 const components = [
   Loading,
   SwitchOption,
   Toast,
   Alert,
-  Confirm
+  Confirm,
+  Slider
 ];
 const install = function(Vue) {
   if (install.installed) return;
@@ -31,7 +33,8 @@ export {
   Loading,
   Toast,
   Alert,
-  Confirm
+  Confirm,
+  Slider
 };
 export default {
   install,
