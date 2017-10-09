@@ -16,8 +16,9 @@
     </transition>
 </template>
 <script>
+    const COMPONENT_NAME = 'ic-alert'
     export default {
-        name: 'ic-alert',
+        name: COMPONENT_NAME,
         data () {
             return {
                 show: false,

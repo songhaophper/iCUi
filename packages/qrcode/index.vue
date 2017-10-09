@@ -11,8 +11,9 @@
 </template>
 <script>
 import qr from 'qr.js'
+const COMPONENT_NAME = 'ic-qrcode'
 export default {
-  name: 'ic-qrcode',
+  name: COMPONENT_NAME,
   props: {
     val: {
       type: String,

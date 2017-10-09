@@ -17,8 +17,9 @@
   </div>
 </template>
 <script>
+  const COMPONENT_NAME = 'ic-loading'
   export default {
-    name :'ic-loading',
+    name :COMPONENT_NAME,
     props :{
       size :{
         type :Number,

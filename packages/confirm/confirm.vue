@@ -15,8 +15,9 @@
     </transition>
 </template>
 <script>
+    const COMPONENT_NAME = 'ic-confirm'
     export default {
-        name : 'ic-confirm',
+        name :COMPONENT_NAME ,
         data () {
             return {
                 show: false,

@@ -9,10 +9,9 @@
 </template>
 
 <script>
-
-
+const COMPONENT_NAME = 'ic-toast'
 export default {
-  name: 'ic-toast',
+  name: COMPONENT_NAME,
   props: {
     
   },
