@@ -38,7 +38,11 @@ module.exports = {
               {
                 "path": "/slider",
                 "title": "Slider 轮播"
-              }
+              },
+              {
+                "path": "/qrcode",
+                "title": "QRCode 二维码"
+              },
             ]
           },
           {

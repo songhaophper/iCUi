@@ -5,5 +5,6 @@ export default {
   'toast': r => require.ensure([], () => r(require('./docs/toast.md')), 'toast.md'),
   'alert': r => require.ensure([], () => r(require('./docs/alert.md')), 'alert.md'),
   'confirm': r => require.ensure([], () => r(require('./docs/confirm.md')), 'confirm.md'),
-  'slider': r => require.ensure([], () => r(require('./docs/slider.md')), 'slider.md')
+  'slider': r => require.ensure([], () => r(require('./docs/slider.md')), 'slider.md'),
+  'qrcode': r => require.ensure([], () => r(require('./docs/qrcode.md')), 'qrcode.md'),
 };

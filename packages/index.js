@@ -4,6 +4,7 @@ import Toast from './toast';
 import Alert from './alert';
 import Confirm from './confirm';
 import Slider from './slider';
+import Qrcode from './qrcode';
 const version = '0.0.1';
 const components = [
   Loading,
@@ -11,7 +12,8 @@ const components = [
   Toast,
   Alert,
   Confirm,
-  Slider
+  Slider,
+  Qrcode
 ];
 const install = function(Vue) {
   if (install.installed) return;
@@ -34,7 +36,8 @@ export {
   Toast,
   Alert,
   Confirm,
-  Slider
+  Slider,
+  Qrcode
 };
 export default {
   install,
