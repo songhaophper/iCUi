@@ -34,7 +34,12 @@ module.exports = {
               {
                 "path": "/loading",
                 "title": "Loading 加载"
-              },
+              }
+            ]
+          },
+          {
+            "groupName": "表单",
+            "list": [
               {
                 "path": "/switch-option",
                 "title": "Switch 滑动开关"
