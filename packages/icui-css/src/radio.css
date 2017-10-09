@@ -1,0 +1,30 @@
+.ic-radio{
+    margin: 10px 0;
+}
+
+.ic-radio-input{
+    position: relative;
+    height: 22px;
+    float: left;
+}
+.ic-radio-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    opacity: 0;
+    margin: 0;
+}
+.ic-icon{
+    font-size: 22px;
+    line-height: 1;
+}
+.ic-icon-checked {
+    color: #06bf04;
+}
+.ic-radio-label {
+    line-height: 22px;
+    display: block;
+    margin-left: 37px;
+}

@@ -14,6 +14,7 @@
     margin-top:20px;
     .text{
       text-align:center;
+      font-size:20px;
       margin-bottom:20px
     }
   }

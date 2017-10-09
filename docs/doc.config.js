@@ -51,6 +51,10 @@ module.exports = {
               {
                 "path": "/switch-option",
                 "title": "Switch 滑动开关"
+              },
+              {
+                "path": "/radio",
+                "title": "Radio 单选"
               }
             ]
           },

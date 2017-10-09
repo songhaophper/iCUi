@@ -2,9 +2,11 @@
   css组件库入口，组装成css组件库
  */
 @import './reset.css';
+@import './icon.css';
 @import './loading.css';
 @import './toast.css';
 @import './alert.css';
 @import './switch-option.css';
+@import './radio.css';
 @import './slider.css';
 

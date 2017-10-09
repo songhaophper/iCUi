@@ -1,5 +1,6 @@
 import Loading from './loading';
 import SwitchOption from './switch-option';
+import Radio from './radio';
 import Toast from './toast';
 import Alert from './alert';
 import Confirm from './confirm';
@@ -9,6 +10,7 @@ const version = '0.0.1';
 const components = [
   Loading,
   SwitchOption,
+  Radio,
   Toast,
   Alert,
   Confirm,
@@ -31,6 +33,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 export {
   install,
   SwitchOption,
+  Radio,
   version,
   Loading,
   Toast,
